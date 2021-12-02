@@ -34,5 +34,9 @@ describe("#wordSearch()", function() {
     ], 'SEINFELD')
 
     assert.isTrue(result);
+  });it("should return undefined if the array is empty", function() {
+    const result = wordSearch([], 'SEINFELD')
+
+    assert.isUndefined(result);
   });
 });
